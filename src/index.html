@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <title>tailwind sample</title>
+</head>
+<body class="lg:px-16 md:px-9 px-5">
+
+
+    <!-- header -->
+    <header id="home">
+        <div class="navbar h-28 my-2 flex flex-col justify-between md:flex-row md:items-center md:my-0 md:h-16
+                    lg:flex-row lg:justify-between lg:items-center lg:h-16">
+            <div class="left flex items-center md:w-1/2 lg:w-2/5">
+                <div class="lins mr-1">
+                    <div class="line w-6 h-1 bg-black"></div>
+                    <div class="line w-6 h-1 bg-black my-1"></div>
+                    <div class="line w-6 h-1 bg-black"></div>
+                </div>
+                <div class="name mr-1">
+                    <h1 class="text-4xl"> Best
+                        <span class="font-bold">Eats</span>
+                    </h1>
+                </div>
+                <div class="link bg-gray-300 rounded-full px-1 py-1 items-center">
+                    <a href="" class= "text-white bg-black rounded-full px-1">Delivery</a>
+                    <a href="" class=" px-1">Pickup</a>
+                </div>
+            </div>
+            <div class="right flex justify-between my-5 md:w-1/2 md:pl-5 lg:my-0 lg:w-3/5 items-baseline">
+                <div class="search bg-gray-300 w-1/2 md:w-2/3 py-1 px-2 rounded-full">
+                    <form action="" class="flex items-center">
+                        <i class="fa fa-search mr-1" aria-hidden="true"></i>
+                        <input class="bg-inherit" type="text" placeholder="search foods...">
+                    </form>
+                </div>
+                <div class="buy">
+                    <a href="" class="bg-black text-white md:w-1/3 py-1 px-2 rounded-full">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- banner -->
+    <div class="banner my-0">
+        <img src="/assets/img/logo.jpg" alt="">
+    </div>
+    <!-- end banner -->
+
+
+    <!-- options -->
+    <div class="options my-28 grid grid-cols-1 grid-rows-3 md:grid md:grid-cols-1 md:grid-rows-3 lg:grid lg:grid-cols-2 lg:grid-rows-2
+                xl:grid xl:grid-cols-3 xl:grid-rows-1 gap-10" id="food-type">
+        <div class="card fast-food w-full text-white flex flex-col justify-between p-3 rounded-xl bg-no-repeat">
+            <div class="card-title">
+                <h1 class="text-4xl">Fast Food</h1>
+                <p class="text-lg font-bold capitalize">Quick and Tasty Fast Food Diner Delights</p>
+            </div>
+            <div class="card-link">
+                <a href="" class="bg-white px-5 text-black font-bold rounded-full flex items-center w-36">
+                    Order Now
+                    <i class="fa fa-arrow-right text-xl ml-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="card iranian-food w-full text-white flex flex-col justify-between p-3 rounded-xl bg-no-repeat">
+            <div class="card-title">
+                <h1 class="text-4xl capitalize">iranian food</h1>
+                <p class="text-lg capitalize font-bold">The Most Delicious Food in The World Just Try For First time</p>
+            </div>
+            <div class="card-link">
+                <a href="" class="bg-white px-5 text-black font-bold rounded-full flex items-center w-36">
+                    Order Now
+                    <i class="fa fa-arrow-right text-xl ml-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="card japenese-food w-full text-white flex flex-col justify-between p-3 rounded-xl bg-no-repeat">
+            <div class="card-title">
+                <h1 class="text-4xl capitalize">japenese food</h1>
+                <p class="text-lg capitalize font-bold">come here and be a samurai</p>
+            </div>
+            <div class="card-link">
+                <a href="" class="bg-white px-5 text-black font-bold rounded-full flex items-center w-36">
+                    Order Now
+                    <i class="fa fa-arrow-right text-xl ml-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end options -->
+
+
+    <!-- menu -->
+    <div class="menu my-20" id="menu">
+    <div class="menu-title text-4xl font-bold text-center text-orange-600 my-3">
+        <h1>Top Rated Menu Items</h1>
+    </div>
+    <div class="menu-filters flex justify-between py-1">
+        <div class="left">
+            <div class="filter-title text-xl">
+                <h1>Filter Type</h1>
+            </div>
+            <div class="filter-item grid grid-cols-2 grid-rows-3 gap-2 text-center sm:flex">
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>All</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>Burgers</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>Pizza</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>Salad</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>Chicken</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="filter-title text-xl">
+                <h1>Filter Price</h1>
+            </div>
+            <div class="filter-item grid grid-cols-2 grid-rows-3 gap-2 text-center sm:flex">
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>$</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>$$</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3 mx-1">
+                    <p>$$$</p>
+                </div>
+                <div class="item border-2 border-orange-400 rounded-full px-3">
+                    <p>$$$$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-items my-5 grid grid-cols-2 grid-rows-6 md:grid md:grid-cols-3 md:grid-rows-4 lg:grid lg:grid-cols-4 lg:grid-rows-3 gap-7">
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+        <div class="card shadow-xl bg-white rounded-xl overflow-hidden">
+            <img class="w-full" src="/assets/img/menu-item.jpg" alt="">
+            <div class="card-footer py-2 px-3 flex justify-between items-center">
+                <div class="name font-bold text-lg">Burgers and Pizza</div>
+                <div class="price bg-orange-500 text-white rounded-full px-2">10$</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end menu -->
+
+
+    <!-- footer -->
+    <div class="footer flex justify-between py-5">
+        <div class="left w-1/2 text-justify">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni deserunt sit consequuntur excepturi inventore nobis repellat autem fuga commodi provident blanditiis nesciunt doloremque reprehenderit nostrum necessitatibus sint earum a laudantium, numquam ipsum illum harum laborum. Magni, ab esse explicabo veritatis, odio voluptates nisi exercitationem libero id sapiente eligendi consequuntur enim. Blanditiis ea esse quae impedit architecto non quam quos. Totam accusantium quae excepturi iusto aperiam harum doloribus magni nostrum odit. Commodi recusandae quasi quae fugiat voluptas, quis aspernatur impedit!</p>
+        </div>
+        <div class="bottom list-none text-2xl">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li class="my-3">
+                <a href="#food-type">Food Type</a>
+            </li>
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+        </div>
+        <div class="right">
+            <div>
+                <span>social media</span>
+            </div>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram text-red-600 text-4xl" aria-hidden="true"></i>
+                <i class="fa-brands fa-facebook text-blue-700 text-4xl mx-2" aria-hidden="true"></i>
+                <i class="fa-brands fa-twitter text-blue-700 text-4xl" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <!-- end footer  -->
+
+
+</body>
+</html>

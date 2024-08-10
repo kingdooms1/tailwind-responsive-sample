@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: dirooz;
+    src: url(/assets/Font/Dirooz.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: dirooz;
+}
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+/* header */
+input:focus {
+    outline:none;
+}
+header .navbar .buy a{
+    transition: all 0.2s linear;
+}
+header .navbar .buy a:hover{
+    background-color: orangered;
+}
+
+/* end header */
+
+
+/* options */
+/* in here you can use sass and make a mixin
+then write similar code on there then use @include 
+and use that, (dont copy these codes).
+i dont do that because i want to use only tailwind but
+i dont no why it isnt work with classes*/
+.options .fast-food , .iranian-food , .japenese-food{
+    height: 300px;
+    transition: all 0.3s linear;
+}
+.options .fast-food{
+    background: url(/assets/img/options-card.jpg);
+    background-size: cover;
+}
+.options .iranian-food{
+    background: url(/assets/img/persian\ food.webp);
+    background-size: cover;
+}
+.options .japenese-food{
+    background: url(/assets/img/japenese\ food.webp);
+    background-size: cover;
+}
+.options .card:hover{
+    transform: scale(1.1 , 1.1);
+}
+/* end options */
+
+
+/* menu */
+.menu .menu-items .card{
+    transition: all 0.2s linear;
+}
+.menu .menu-items .card:hover{
+    transform: scale(1.1 , 1.1);
+}
+/* end menu  */
+
+
+
+/* haj abbas */
